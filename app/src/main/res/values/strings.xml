@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">AndroidExplore</string>
+    <string name="send_message">发送消息</string>
+    <string name="activity_life_cicle">Activity生命周期</string>
+    <string name="messenger">信使</string>
+</resources>
