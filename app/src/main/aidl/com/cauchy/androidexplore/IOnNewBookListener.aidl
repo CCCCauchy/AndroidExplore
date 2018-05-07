@@ -1,7 +1,7 @@
 // OnNewBookListener.aidl
 package com.cauchy.androidexplore;
 
-import com.cauchy.androidexplore.aidl.Book;
+import com.cauchy.androidexplore.Book;
 // Declare any non-default types here with import statements
 
 interface IOnNewBookListener {
@@ -9,5 +9,5 @@ interface IOnNewBookListener {
      * Demonstrates some basic types that you can use as parameters
      * and return values in AIDL.
      */
-    void onNewBook(out Book newBook);
+    void onNewBook(inout Book newBook);
 }

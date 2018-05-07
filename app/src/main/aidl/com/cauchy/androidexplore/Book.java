@@ -1,4 +1,4 @@
-package com.cauchy.androidexplore.aidl;
+package com.cauchy.androidexplore;
 
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -61,9 +61,13 @@ public class Book implements Parcelable {
         dest.writeString(category);
     }
 
-    public void readFromParcel(Parcel in){
+    public void readFromParcel(Parcel in) {
         name = in.readString();
         category = in.readString();
     }
 
+    @Override
+    public String toString() {
+        return name + "," + category;
+    }
 }

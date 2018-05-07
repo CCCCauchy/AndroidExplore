@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.cauchy.androidexplore">
 
+    <permission
+        android:name="com.cauchy.androidexplore.aidl"
+        android:protectionLevel="normal" />
+
+    <uses-permission android:name="com.cauchy.androidexplore.aidl" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -23,7 +29,15 @@
             android:name=".service.MessengerServerService"
             android:enabled="true"
             android:exported="true"
-            android:process=":remote"></service>
+            android:process=":remote" />
+        <service
+            android:name=".service.AIDLServerService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="com.cauchy.androidexplore.aidl"
+            android:process=":remote" />
+
+        <activity android:name=".activity.AIDLClientActivity"></activity>
     </application>
 
 </manifest>

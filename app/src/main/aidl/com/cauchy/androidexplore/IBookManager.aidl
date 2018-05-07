@@ -1,8 +1,8 @@
 // IBookManager.aidl
-package com.cauchy.androidexplore.aidl;
+package com.cauchy.androidexplore;
 
-import com.cauchy.androidexplore.aidl.Book;
-import com.cauchy.androidexplore.aidl.IOnNewBookListener;
+import com.cauchy.androidexplore.Book;
+import com.cauchy.androidexplore.IOnNewBookListener;
 // Declare any non-default types here with import statements
 
 interface IBookManager {
@@ -10,7 +10,7 @@ interface IBookManager {
      * Demonstrates some basic types that you can use as parameters
      * and return values in AIDL.
      */
-//    List<Book> getBookList();
+    List<Book> getBookList();
 
     void addBook(in Book book);
 

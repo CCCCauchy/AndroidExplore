@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import com.cauchy.androidexplore.activity.AIDLClientActivity;
 import com.cauchy.androidexplore.activity.LifeCicleActivity;
 import com.cauchy.androidexplore.activity.MessengerClientActivity;
 
@@ -67,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         Log.i(TAG, "onDestroy");
     }
 
-    @OnClick({R.id.activity_life_cicle, R.id.messenger})
+    @OnClick({R.id.activity_life_cicle, R.id.messenger, R.id.aidl})
     public void onViewClicked(View v) {
         switch (v.getId()) {
             case R.id.activity_life_cicle:
@@ -77,6 +78,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.messenger:
                 startActivity(new Intent(this, MessengerClientActivity.class));
+                break;
+            case R.id.aidl:
+                startActivity(new Intent(this, AIDLClientActivity.class));
                 break;
             default:
                 break;
