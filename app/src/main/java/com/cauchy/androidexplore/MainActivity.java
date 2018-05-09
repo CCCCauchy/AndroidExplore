@@ -10,6 +10,7 @@ import android.widget.Button;
 import com.cauchy.androidexplore.activity.AIDLClientActivity;
 import com.cauchy.androidexplore.activity.LifeCicleActivity;
 import com.cauchy.androidexplore.activity.MessengerClientActivity;
+import com.cauchy.androidexplore.activity.TouchEventActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -68,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         Log.i(TAG, "onDestroy");
     }
 
-    @OnClick({R.id.activity_life_cicle, R.id.messenger, R.id.aidl})
+    @OnClick({R.id.activity_life_cicle, R.id.messenger, R.id.aidl, R.id.touch_event})
     public void onViewClicked(View v) {
         switch (v.getId()) {
             case R.id.activity_life_cicle:
@@ -81,6 +82,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.aidl:
                 startActivity(new Intent(this, AIDLClientActivity.class));
+                break;
+            case R.id.touch_event:
+                startActivity(new Intent(this, TouchEventActivity.class));
                 break;
             default:
                 break;

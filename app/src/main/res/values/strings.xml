@@ -5,4 +5,5 @@
     <string name="messenger">信使</string>
     <string name="add_book">添加书籍</string>
     <string name="aidl">AIDL</string>
+    <string name="touch_event">事件分发</string>
 </resources>

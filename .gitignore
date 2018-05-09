@@ -5,10 +5,11 @@
 /.idea/modules.xml
 /.idea/workspace.xml
 /.idea/vcs.xml
-/.idea/
-/.idea/codeStyles/
+/.idea/caches
+/.idea/codeStyles
+.idea/misc.xml
+/.idea
 .DS_Store
 /build
 /captures
-/app/build/
 .externalNativeBuild

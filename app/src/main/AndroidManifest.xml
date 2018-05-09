@@ -37,7 +37,8 @@
             android:permission="com.cauchy.androidexplore.aidl"
             android:process=":remote" />
 
-        <activity android:name=".activity.AIDLClientActivity"></activity>
+        <activity android:name=".activity.AIDLClientActivity" />
+        <activity android:name=".activity.TouchEventActivity"></activity>
     </application>
 
 </manifest>
